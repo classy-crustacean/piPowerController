@@ -1,0 +1,9 @@
+[Unit]
+Description=power button service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 /usr/local/bin/powerButton.py
+
+[Install]
+WantedBy=multi-user.target
